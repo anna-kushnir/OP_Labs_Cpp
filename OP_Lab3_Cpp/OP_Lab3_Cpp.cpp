@@ -26,6 +26,6 @@ int main()
 		Sum = Sum + a;
 	}
 	cout << "Сума k членiв послiдовностi, якi задовольняють умову: " << endl;
-	printf("Sum = %.10f\n", Sum);
+	printf("Sum = %.5f\n", Sum);
 	system("pause");
 }
