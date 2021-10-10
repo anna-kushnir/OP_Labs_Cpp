@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "");
-	float x;       // початкове дане
+	double x;       // початкове дане
 	long n;        // лічильник
-	float a;       // n-ий член послідовності
-	float Sum;     // результат
+	double a;       // n-ий член послідовності
+	double Sum;     // результат
 	cout << "Введiть значення x: "; cin >> x;
 	n = 1;
 	a = x / 2;
@@ -26,6 +26,6 @@ int main()
 		Sum = Sum + a;
 	}
 	cout << "Сума k членiв послiдовностi, якi задовольняють умову: " << endl;
-	printf("Sum = %.5f\n", Sum);
+	printf("Sum = %.10f\n", Sum);
 	system("pause");
 }
