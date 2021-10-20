@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7099b8ad-a1e5-4783-9b96-effabc601375}</ProjectGuid>
+    <ProjectGuid>{99ff91b1-1d60-4234-aa44-57591cbfc1ab}</ProjectGuid>
     <RootNamespace>OPLab4Cpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
