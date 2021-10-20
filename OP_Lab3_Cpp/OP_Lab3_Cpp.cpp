@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "");
-	float x;       // початкове дане
-	long n;        // лічильник
-	float a;       // n-ий член послідовності
-	float Sum;     // результат
+	float x;             // початкове дане
+	unsigned long n;     // лічильник
+	float a;             // n-ий член послідовності
+	float Sum;           // результат
 	cout << "Введiть значення x: "; cin >> x;
 	n = 1;
 	a = x / 2;
