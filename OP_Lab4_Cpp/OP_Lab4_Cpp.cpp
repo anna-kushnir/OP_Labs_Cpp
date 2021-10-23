@@ -10,7 +10,7 @@ int main()
 	cout << "Enter the value of n: "; cin >> n;
 	a = 2;
 	Sum = a;
-	for (int i = 2; i <= n; i = i + 1) {
+	for (int i = 2; i <= n; i++) {
 		a = (a * a) / (a + 3);
 		Sum = Sum + a;
 	}
