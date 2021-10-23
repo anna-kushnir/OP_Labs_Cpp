@@ -12,9 +12,11 @@ int main()
 	for (k = 1; k < m; k = k + 1)
 	{
 		Sum_k = 0;
-		for (i = k; i > 0; i = i / 10)
+		i = k;
+		while (i > 0)
 		{
 			Sum_k = Sum_k + i % 10;
+			i = i / 10;
 		}
 		if (Sum_k == n)
 			cout << k << endl;
