@@ -24,7 +24,7 @@
     <ProjectGuid>{af1951be-4a89-4269-a8fc-6e824dcb1a53}</ProjectGuid>
     <RootNamespace>OPLab62Cpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>OP_Lab6_Cpp_2</ProjectName>
+    <ProjectName>OP_Lab6_Cpp_correct</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="OP_Lab6_Cpp_2.cpp" />
+    <ClCompile Include="OP_Lab6_Cpp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
