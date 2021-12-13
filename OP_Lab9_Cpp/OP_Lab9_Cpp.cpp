@@ -3,18 +3,21 @@
 #include <stdio.h>
 using namespace std;
 
-string s;									// the input string
-const int n = 20;
-typedef string Array[n][n];
-Array words;								// array of words
-bool check(string);							// whether the condition is met (all characters are numbers or spaces)
-int find_words(string, Array);				// defining the list and number of words
-void output_words(Array, int);				// output of each word in a new line
-void search(Array, int, int*, int*);		// search for the largest and smallest words
-string replace(Array, int, int, int);
+bool check(string);                            // whether the condition is met (all characters are numbers or spaces)
+int find_words(string, string**);              // defining the list and number of words
+void output_words(string**, int);              // output of each word in a new line
+void search(string**, int, int*, int*);        // search for the largest and smallest words
+string replace(string**, int, int, int);       // swap the smallest and largest words
 
 int main()
 {
+	string s;                                  // the input string
+	const int n = 20;
+	string** words;
+	words = new string * [n];                  // array of words
+	for (int i = 0; i < n; i++) {
+		words[n] = new string [n];
+	}
 	int numOfWords;
 	int nMax = 0;
 	int nMin = 0;
@@ -53,7 +56,7 @@ bool check(string str)
 	return R;
 }
 
-int find_words(const string str, Array st)
+int find_words(const string str, string** st)
 {
 	int k;
 	int num = 0;
@@ -82,14 +85,14 @@ int find_words(const string str, Array st)
 	return num;
 }
 
-void output_words(Array word, int m)
+void output_words(string** word, int m)
 {
 	for (int j = 0; j < m; j++)
 		cout << "  " << word[j][1] << endl;
 	cout << endl;
 }
 
-void search(Array st, int num, int* numOfMax, int* numOfMin)
+void search(string** st, int num, int* numOfMax, int* numOfMin)
 {
 	long str1;
 	long max = stoul(st[0][1]);
@@ -109,7 +112,7 @@ void search(Array st, int num, int* numOfMax, int* numOfMin)
 	cout << "The smallest word is number " << *numOfMin << ": " << min << endl;
 }
 
-string replace(Array st, int num, int numMax, int numMin)
+string replace(string** st, int num, int numMax, int numMin)
 {
 	
 	string str = "";
