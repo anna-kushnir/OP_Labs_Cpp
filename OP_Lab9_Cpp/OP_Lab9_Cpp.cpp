@@ -8,15 +8,16 @@ int find_words(string, string**);              // defining the list and number o
 void output_words(string**, int);              // output of each word in a new line
 void search(string**, int, int*, int*);        // search for the largest and smallest words
 string replace(string**, int, int, int);       // swap the smallest and largest words
+void deleting(string**, int);                  // deleting an array of words
 
 int main()
 {
 	string s;                                  // the input string
-	const int n = 20;
+	int n = 20;
 	string** words;
 	words = new string * [n];                  // array of words
 	for (int i = 0; i < n; i++) {
-		words[n] = new string [n];
+		words[i] = new string [n];
 	}
 	int numOfWords;
 	int nMax = 0;
@@ -36,6 +37,7 @@ int main()
 	}
 	else
 		cout << "You entered a wrong line! Try again!" << endl;
+	deleting(words,n);
 	system("pause");
 	return 0;
 }
@@ -120,9 +122,16 @@ string replace(string** st, int num, int numMax, int numMin)
 	st2 = st[numMax][1];
 	st[numMax][1] = st[numMin][1];
 	st[numMin][1] = st2;
-	for (int i = 0; i < num; i++)
-	{
+	for (int i = 0; i < num; i++) {
 		str = str + st[i][1] + " ";
 	}
 	return str;
+}
+
+void deleting(string** st, int m)
+{
+	for (int i = 0; i < m; i++) {
+		delete[] st[i];
+	}
+	delete[] st;
 }
