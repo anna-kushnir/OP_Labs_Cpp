@@ -1,3 +1,3 @@
-## Laboratory work on the discipline "Fundamentals of programming 1".
+## Laboratory work on the discipline "Basics of Programming 1".
 #### First year, first semester.
-> Kushnir Hanna. IP-12
+> Hanna Kushnir. IP-12.
