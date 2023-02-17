@@ -1,2 +1,3 @@
-## Лабораторні роботи з дисципліни "Основи програмування 1." 
-Кушнір Ганна. ІП-12. Варіант 18
+## Laboratory work on the discipline "Fundamentals of programming 1".
+#### First year, first semester.
+> Kushnir Hanna. IP-12
